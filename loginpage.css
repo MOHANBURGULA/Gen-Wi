@@ -1,0 +1,108 @@
+/* Background styling */
+body {
+    /* background: linear-gradient(135deg, orange,rgb(224, 88, 0),red,rgb(30, 29, 29)); */
+    background: linear-gradient(135deg, hsl(226, 98%, 36%), #020103);
+    /* background: linear-gradient(135deg, rgba(255, 166, 0, 0),rgb(224, 88, 0),rgba(255, 0, 0, 0),rgba(30, 29, 29, 0)); */
+  
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    animation: backgroundFade 10s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundFade {
+    0% { opacity: 1; }
+    100% { opacity: 0.9; }
+}
+
+/* Card Styling - Glassmorphism */
+.form-card {
+    width: 100%;
+    max-width: 490px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    backdrop-filter: blur(12px); /* Blur effect */
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    color: #ffffff; /* White text for readability */
+    transition: background 1.0s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
+}
+
+.form-card:hover {
+    background: rgba(255, 255, 255, 0.25); /* Increased opacity on hover */
+}
+
+/* Title Styling */
+.title-text {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #f0f0f0;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    animation: titleFade 8s ease-in-out infinite alternate;
+}
+
+@keyframes titleFade {
+    0% { color: #6e8efb; }
+    100% { color: #ffffff; }
+}
+
+/* Nav-Pills (Tab) Styling */
+.nav-pills .nav-link {
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s ease;
+    color: #ffffff; /* White text */
+    font-weight: bold;
+}
+
+.nav-pills .nav-link:hover {
+    transform: scale(1.05);
+}
+
+.nav-pills .nav-link.active {
+    background-color: #4c5fd7;
+    color: #ffffff;
+}
+
+/* Input fields */
+.form-control {
+    background: rgba(255, 255, 255, 0.3); /* Higher opacity */
+    color: #ffffff; /* White text */
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Slightly thicker border */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.form-control:hover, .form-control:focus {
+    box-shadow: 0px 0px 8px rgba(80, 110, 255, 0.7);
+    transform: scale(1.02);
+}
+
+/* Placeholder Text */
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.8); /* Brighter placeholder */
+}
+
+/* Button styling */
+.hover-btn {
+    transition: all 0.4s ease;
+    background-image: linear-gradient(135deg, #6e8efb, #4c5fd7); /* Lighter blue gradient */
+    color: #ffffff; /* White text for contrast */
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Slight border for visibility */
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.hover-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.4); /* Stronger shadow for depth */
+    background-image: linear-gradient(135deg, #4c5fd7, #6e8efb); /* Inverted gradient */
+    color: #ffffff;
+}
