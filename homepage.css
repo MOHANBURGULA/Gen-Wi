@@ -1,0 +1,188 @@
+.upper{
+    border: 5px  solid;
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+    /* background-color: rgb(13, 86, 211); */
+    color: antiquewhite;
+    /* gap: 2rem; */
+    top: 2rem;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+            
+    background: linear-gradient(90deg, #3b82f6, #1e40af);
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    /* color: #a5b4fc !important; */
+    color: #000000 !important;
+}
+
+.navbar-toggler {
+    background-color: #ffffff;
+}
+/* .lefthalf{
+    border: 2px solid black;
+    height: 30vh;
+   
+}
+
+.lefthalf h1 {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    Adjust spacing below the first h1 element
+}
+
+.lefthalf p.text {
+    margin-top: 20px; Adjust spacing above the paragraph
+    font-size: 2rem; Optional: increase font size if needed
+    line-height: 1.6; 
+    text-align: center;
+    height: 15vh;
+    justify-content: center;
+    
+     text-align: center;
+     Optional: adjust line spacing for readability 
+}
+.button{
+    display: flex;
+    flex-direction: row;
+} */
+.lefthalf {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: azure;
+    height: 50vh;
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1920x1080') no-repeat center center/cover; */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+.lefthalf h1 {
+    margin-bottom: 40px; /* Space between h1 and p */
+}
+
+.lefthalf p {
+    margin-bottom: 50px; /* Space between p and button */
+}
+
+.lefthalf .button {
+    margin-top: 40px; /* Optional additional space above button */
+}
+
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Adjust color as needed */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+     
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+/* .secondhalf{
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    border: 2px solid black;
+    display: inline;
+    justify-content: center;
+    
+} */
+eatures Section */
+#features {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.feature-card {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+}
+/* Testimonials Section */
+#testimonials {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin: 0;
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+}
+
+p {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #333;
+    color: #ccc;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Button Effects */
+.btn-primary {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
